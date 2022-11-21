@@ -15,6 +15,6 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build & Push Image
       run: |
-        echo "${{ secrets.RITIK }}" | docker login -u "ritik1001" --password-stdin
+        echo "${{ secrets.RITIKRAJ }}" | docker login -u "ritik1001" --password-stdin
         docker image build -t ritik1001/flashapp:latest .
         docker push ritik1001/flashapp:latest
