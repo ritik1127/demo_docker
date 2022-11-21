@@ -34,8 +34,3 @@ jobs:
         
           docker push docker.io/${{ secrets.demo_username }}/${{ secrets.demo_r }}:$GITHUB_SHA 
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
