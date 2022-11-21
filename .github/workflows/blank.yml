@@ -28,7 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Build the docker image
         run: |
-          echo "${{ secrets.Rritik123# }}" | docker login -u "ritik1001" --password-stdin
-          docker image build -t dab8106/pyflask:latest .
-          docker push dab8106/pyflask:latest
+          echo "${{ secrets.RITIK }}" | docker login -u "ritik1001" --password-stdin
+          docker image build -t ritik1001/ritik:v3 .
+          docker push ritik1001/ritik:v3
 
